@@ -10,7 +10,6 @@ import java.sql.Statement;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import view.LoginView;
-import view.ProfileView;
 
 
 /**
@@ -43,9 +42,4 @@ public class DataModel {
         }
     }
     
-    public void getprofile(String nama, String username, String password){
-        ProfileView profileView = new ProfileView(); 
-        profileView.lnama.setText("");
-        profileView.lnama.setVisible(true);     
-    }
 }

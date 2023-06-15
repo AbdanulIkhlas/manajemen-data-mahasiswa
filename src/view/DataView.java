@@ -276,9 +276,7 @@ DataModel dataModel = new DataModel();
 
         jScrollPane1.setBorder(null);
 
-        tabel_data.setBackground(new java.awt.Color(255, 255, 255));
         tabel_data.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
-        tabel_data.setForeground(new java.awt.Color(0, 0, 0));
         tabel_data.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null, null, null, null, null, null, null, null},
@@ -302,7 +300,6 @@ DataModel dataModel = new DataModel();
         tabel_data.setGridColor(new java.awt.Color(16, 24, 32));
         tabel_data.setRowHeight(40);
         tabel_data.setSelectionBackground(new java.awt.Color(0, 0, 0));
-        tabel_data.setSelectionForeground(new java.awt.Color(255, 255, 255));
         tabel_data.setShowGrid(true);
         jScrollPane1.setViewportView(tabel_data);
 
@@ -311,9 +308,7 @@ DataModel dataModel = new DataModel();
         jScrollPane3.setBorder(null);
         jScrollPane3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        tabel_admin.setBackground(new java.awt.Color(255, 255, 255));
         tabel_admin.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
-        tabel_admin.setForeground(new java.awt.Color(0, 0, 0));
         tabel_admin.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -337,7 +332,6 @@ DataModel dataModel = new DataModel();
         tabel_admin.setGridColor(new java.awt.Color(16, 24, 32));
         tabel_admin.setRowHeight(50);
         tabel_admin.setSelectionBackground(new java.awt.Color(0, 0, 0));
-        tabel_admin.setSelectionForeground(new java.awt.Color(255, 255, 255));
         tabel_admin.setShowGrid(true);
         jScrollPane3.setViewportView(tabel_admin);
         if (tabel_admin.getColumnModel().getColumnCount() > 0) {
@@ -348,21 +342,15 @@ DataModel dataModel = new DataModel();
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1020, Short.MAX_VALUE)
-            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel1Layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 1020, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 1020, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 423, Short.MAX_VALUE)
-            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel1Layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 423, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 423, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         jTabbedPane1.addTab("Admin", jPanel1);
@@ -432,41 +420,6 @@ DataModel dataModel = new DataModel();
         dispose();
     }//GEN-LAST:event_btnMenuActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(DataView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(DataView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(DataView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(DataView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new DataView().setVisible(true);
-            }
-        });
-    }
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnMenu;
     private javax.swing.JLabel jLabel1;
@@ -477,7 +430,7 @@ DataModel dataModel = new DataModel();
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTabbedPane jTabbedPane1;
-    public javax.swing.JTable tabel_admin;
+    private javax.swing.JTable tabel_admin;
     private javax.swing.JTable tabel_data;
     // End of variables declaration//GEN-END:variables
 }

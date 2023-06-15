@@ -12,7 +12,6 @@ import java.sql.*;
 import model.DataModel;
 import view.DataView;
 import view.EditAdminView;
-import view.ProfileView;
 
 /**
  *
@@ -57,9 +56,7 @@ public class ControllerLogin {
         }else {
             String message1 = "Login Berhasil";
             JOptionPane.showMessageDialog(null,message1,"Message",JOptionPane.INFORMATION_MESSAGE);
-            
-            dataModel.getprofile(cek_nama, username, password);
-            
+                       
             new MenuView().setVisible(true);
             loginView.dispose();
         }
