@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 23, 2023 at 03:29 PM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.2.4
+-- Waktu pembuatan: 19 Jun 2023 pada 06.02
+-- Versi server: 10.4.21-MariaDB
+-- Versi PHP: 7.4.23
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mhs`
+-- Struktur dari tabel `mhs`
 --
 
 CREATE TABLE `mhs` (
@@ -41,10 +41,10 @@ CREATE TABLE `mhs` (
   `scpk` varchar(2) NOT NULL,
   `techno` varchar(2) NOT NULL,
   `ips` float NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `mhs`
+-- Dumping data untuk tabel `mhs`
 --
 
 INSERT INTO `mhs` (`nama`, `nim`, `aa`, `aok`, `opk`, `pbo`, `pkn`, `ppbo`, `pscpk`, `rpl`, `scpk`, `techno`, `ips`) VALUES
@@ -57,22 +57,23 @@ INSERT INTO `mhs` (`nama`, `nim`, `aa`, `aok`, `opk`, `pbo`, `pkn`, `ppbo`, `psc
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Struktur dari tabel `users`
 --
 
 CREATE TABLE `users` (
   `nama` varchar(255) NOT NULL,
   `username` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `users`
+-- Dumping data untuk tabel `users`
 --
 
 INSERT INTO `users` (`nama`, `username`, `password`) VALUES
-('asdfasfsdfsdf', 'desyna', 'desy123'),
+('agil', 'desyna', 'agil123'),
 ('Al Ikhsan Akbar', 'ikhsan', '234'),
+('Muhammad Abdanul Ikhlas', 'KLaZ', 'klaz123'),
 ('harish', 'pey', '12345'),
 ('Garaaaaaaya', 'yb', '12345'),
 ('Tegar Wibisana', 'ybgara', '1234');
@@ -82,13 +83,13 @@ INSERT INTO `users` (`nama`, `username`, `password`) VALUES
 --
 
 --
--- Indexes for table `mhs`
+-- Indeks untuk tabel `mhs`
 --
 ALTER TABLE `mhs`
   ADD PRIMARY KEY (`nim`);
 
 --
--- Indexes for table `users`
+-- Indeks untuk tabel `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`username`);
